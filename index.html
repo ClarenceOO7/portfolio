@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <img src="avatar.png" alt="Your Photo" class="profile-photo">
+        <h2>Hello, I'm Clarence S. Gotinga</h2>
+        <p>Welcome to my personal portfolio</p>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hey there! I’m [Clarence S. Gotinga], your friendly neighborhood gamer. I’ve been gaming since [2018] and love getting lost in different worlds, whether it's FPS, RPG, or MOBA. My main games right now are [PUBG MOBILE], but I’m always down to try something new.
+
+        When I’m not grinding for the next achievement or building epic strategies with my squad, you can find me hanging out with friends in voice chat, sharing tips, or having a good laugh during clutch moments. I love competing, but it’s the community that makes gaming so special—so feel free to join the fun!
+        
+        Catch me online [PUBG MOBILE] and don’t forget to follow me for streams, memes, and some epic gameplay! Let’s team up and take on the world!</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skill">
+        <h3>Clutch Gameplay</h3>
+        <p>I’m known for pulling off crazy 1v4s and turning impossible situations into victories. I always stay calm under pressure and know when to push or retreat.</p>
+      </div>
+      <div class="skill">
+        <h3>Precision Sniping</h3>
+        <p>I’ve got my sniper skills on lock. Whether it’s a long-range headshot or a surprise close-quarters snipe, I take out targets with deadly accuracy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Empower Gamers to Master Solo vs. Squad Gameplay</h3>
+        <p>The primary goal of Solo Mastery is to provide players with the knowledge, skills, and strategies needed to dominate solo vs. squad battles in PUBG Mobile. Through tutorials, live streams, and personalized coaching, I aim to break down the complexities of solo gameplay and help players improve their decision-making, positioning, and combat skills. Whether they’re new to solo play or experienced players looking to refine their strategies, this project is designed to turn every gamer into a more confident and capable solo competitor.</p>
+      </div>
+      <div class="project">
+        <h3>Build a Supportive Community of Solo Players</h3>
+        <p>Another key goal of Solo Mastery is to build an engaged community of solo players who can share experiences, tips, and strategies. Through a dedicated Discord server, interactive live streams, and community-driven tournaments, I want to create a space where solo gamers can connect, learn from one another, and challenge themselves to improve. This goal is focused on fostering collaboration, positive feedback, and healthy competition, so gamers feel supported as they work to enhance their solo play and rise through the ranks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch, please reach out through the form below.</p>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+  <script>
+    // Smooth Scroll for Navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
